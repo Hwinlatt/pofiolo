@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300&family=Macondo&family=Open+Sans&display=swap');
+@keyframes leftRight {
+    0% { transform: scale(0.7);}
+  25%  { transform: scale(1); }
+  /* 75% { transform: scale(1.1);} */
+  100% { transform: scale(0.7);}
+}
+*{
+    /* font-family: 'Open Sans', sans-serif; */
+    list-style: none;
+}
+.fm-dafault{
+    font-family: Verdana,sans-serif;
+}
+ul{
+    margin: 0px;
+    padding: 0px;
+}
+.navLogo{
+    position: relative;
+    animation-name: leftRight;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+.text-border-dark{
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.bg-light_gray{
+    background: #CCCCCC;
+}
+nav{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+}
+.light-dark-btn{
+    right: 0px;
+}
+.h-100vh{
+    height: 100vh;
+}
+.title-s{
+    font-weight: 600;
+    color: #1e1e1e;
+    font-size: 1.1rem;
+}
+.fs-small{
+    font-size: small;
+    
+}
+.introduction{
+    background: url("img/web-dev.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment:fixed ;
+    background-position: center;
+}
+.Experience{
+    background: url('https://images.unsplash.com/photo-1545670723-196ed0954986?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fHdlYiUyMGRldmVsb3BtZW50fGVufDB8fDB8fA%3D%3D&w=1000&q=80');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed ;
+    background-position: center;
+}
+.line-mf {
+    width: 40px;
+    height: 3px;
+    background-color: #0078ff;
+    margin: 0 auto;
+}
+.ex-circle{
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 3px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+.ico-circle{
+    border: 7px solid #0D6EFD;
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+#service .ico-circle:hover{
+  background: #0D6EFD;
+  border: 7px solid white;
+}
+.z-10{
+    z-index: 10;
+}
+.fs-xsmaller{
+    font-size: x-small;
+}
+.experience{
+    background-color: #1563BE;
+    opacity: 0.9;
+    width: 100%;
+    height: fit-content;
+    /* margin-top: -100vh; */
+}
+.ts-0p5{
+    transition: 0.6s;
+    
+}
+.projectsContainer img:hover{
+    transform: scale(1.2);
+}
+.light-dark-container{
+    display: flex;
+    background-color: gray;
+    width: 50px;
+    height: 20px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    position: relative;
+}
+.light-dark-btn:hover{
+    box-shadow: 2px 2px 10px blue;
+}
+.circle{
+    position: absolute;
+    width: 50%;
+    height: 25px;
+    border-radius: 50%;
+    font-size: larger;
+}
+.nav-bar a::after{
+    background-color: #0D6EFD;
+    content: "";
+    width: 0px;
+    transition: 0.6s ease-in-out;
+    height: 2px;
+    position: absolute;
+    left: 0px;
+    bottom: -4px;
+}
+.nav-bar a:hover::after{
+    width: 100%;
+}
+.line{
+    width: 30px;
+    height: 2px;
+    margin: 4px 0px;
+    background-color: silver;
+    transition: 0.6s;
+}
+.menuContainer{
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    height: auto;
+    cursor: pointer;
+    display: none;
+}
+.cross-line-1{
+    transform: rotate(45deg) translate(4px);
+    left: 0px;
+    /* position: absolute; */
+} 
+.cross-line-3{
+    transform: rotate(-45deg) translate(4px);
+    right: 0px;
+    /* position: absolute; */
+}
+.contact_container div{
+    width: 50%;
+    background: #F2E6B6;
+}
+.contect_form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact_form  div{
+    width: 100%;
+    margin-top: 15px;
+    background-color: #999;
+    /* margin-left: 30px; */
+    padding: 5px 30px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+.contact_form input{
+    width: 100%;
+    margin:0px 10px;
+    height: 30px;
+    outline: none;
+    border: none;
+    background: #999;
+}
+.menuForPhone{
+    display: none;
+}
+@media (max-width: 480px) {
+    .nav-container{
+        display: none;
+    }
+    .menuContainer{
+        display: block;
+    }
+}
